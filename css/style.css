@@ -1,0 +1,329 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap');
+
+:root {
+    --Dark-Blue-intro-bg: hsl(217, 28%, 15%);
+    --Dark-Blue-main-bg: hsl(218, 28%, 13%);
+    --Dark-Blue-footer-bg: hsl(216, 53%, 9%);
+    --Dark-Blue-testimonials-bg: hsl(219, 30%, 18%);
+    --Cyan-inside: hsl(176, 68%, 64%);
+    --Blue-inside: hsl(198, 60%, 50%);   
+    --White: hsl(0, 0%, 100%);
+    --Font-size: 14px;    
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    color: var(--White);
+    text-decoration: none;
+    display: inline-block;
+}
+
+input,
+.btn {
+    outline: none;
+    border: none;
+    margin-top: 20px;
+}
+
+body {
+    background: var(--Dark-Blue-main-bg) url('../images/bg-curvy-desktop.svg') bottom center/cover no-repeat;
+    background-blend-mode: soft-light;
+    color: var(--White);
+    font-family: 'Open Sans', sans-serif;
+}
+
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.btn {
+    font-family: 'Raleway', sans-serif;
+}
+
+.flex {
+    display: flex;
+}
+
+.grid {
+    display: grid;
+    gap: 25px;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.mr {
+    margin-right: 15px;
+}
+
+.rounded-circle {
+    border-radius: 50%;
+}
+
+.rounded-pill {
+    border-radius: 50px;
+}
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 40px 20px;
+}
+
+.nav {
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px;
+}
+
+.navbarNav {
+    margin-left: -12px;
+    margin-right: -12px;
+}
+
+.nav-item {
+    padding: 12px;
+}
+
+.home-card {
+    text-align: center;
+}
+
+.btn {
+    color: var(--White);
+    padding: 8px 40px;
+    background: linear-gradient(45deg, var(--Cyan-inside), var(--Blue-inside));
+    font-size: 18px;
+    border-radius: 50px;
+}
+
+.card-text {
+    margin-bottom: 15px;
+}
+
+.card-title,
+.about-title {
+    margin-bottom: 10px;
+}
+
+.about-grid {
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.about-img-box {
+    padding: 15px;
+}
+
+.service-box {
+    justify-content: space-between;
+}
+
+.service-box > * {
+    flex-basis: 48%;
+}
+
+.mini-title {
+    margin-bottom: 15px;
+    margin-top: 25px;
+}
+
+.review-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.review-card {
+    background-color: var(--Dark-Blue-testimonials-bg);
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.review-card-profile {
+    margin-top: 20px;
+    align-items: center;
+}
+
+.reviewer-img-div {
+    flex-basis: 18%;
+}
+
+.reviewer-info-div {
+    flex-basis: 82%;
+    padding: 10px;
+}
+
+.signup-section {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    position: relative;
+}
+
+.contact-card {
+    max-width: 720px;
+    background-color: var(--Dark-Blue-intro-bg);
+    bottom: -45%;
+    padding: 25px 35px;
+    position: absolute;
+    border-radius: 5px;
+}
+
+.contact-card-flex {
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+}
+
+.contact-title {
+    margin-bottom: 10px;
+    font-size: 30px;
+}
+
+.btn-box {
+    flex-basis: 39%;
+}
+
+.form-flex {
+    justify-content: space-between;
+}
+
+.mail-label {
+    flex-basis: 58%;
+}
+
+.mail-input {
+    padding: 8px 25px;
+}
+
+.btn-start,
+.mail-input {
+    font-size: 18px;
+}
+
+.footer {
+    background-color: var(--Dark-Blue-footer-bg);
+    padding-top: 100px;
+}
+
+.footer-grid {
+    grid-template-columns: 12fr 7fr 3fr 3fr 6fr;
+    margin-top: 20px;
+}
+
+.info-col > .flex {
+    margin-bottom: 10px;
+}
+
+.social-media {
+    width: 35px;
+    height: 35px;
+    border: 1px solid var(--White);
+    align-items: center;
+    justify-content: center;
+}
+
+.social-media:nth-of-type(2) {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+@media (max-width: 576px) {
+    body {
+        background: var(--Dark-Blue-main-bg) url('../images/bg-curvy-mobile.svg') bottom center/cover no-repeat;
+    }
+    .nav {
+        padding: 10px 20px;
+    }
+    .navbarNav {
+        margin-left: -5px;
+        margin-right: -5px;
+    }
+    
+    .nav-item {
+        padding: 5px;
+    }
+    .logo {
+        width: 80px;
+    }
+    .form-flex,
+    .service-box {
+        flex-direction: column;
+    }
+    .contact-card {
+        padding: 20px 15px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .about-grid,    
+    .review-grid ,
+    .footer-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (min-width: 577px) and (max-width: 1020px) {
+    .footer-grid {
+        grid-template-columns: 2fr 2fr 3fr;
+    }
+    .footer-main {
+        grid-column: 1 / 5;
+        grid-row: 1 / 2;
+    }
+    .info-col {
+        grid-column: 5 / 8;
+        grid-row: 1 / 2;
+    }
+    .link-col-1 {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+    }
+    .link-col-1 {
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+    }
+    .social-media-col {
+        grid-column: 3 / 8;
+        grid-row: 2 / 3;
+    }
+}
+
+@media (min-width: 768px) {
+    .home-card {
+        width: 85%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .nav {
+        padding: 10px 20px;
+    }
+    .container {
+        padding: 40px 40px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .home-card {
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .mini-title {
+        font-size: 30px;
+        max-width: 320px;
+    }
+}
