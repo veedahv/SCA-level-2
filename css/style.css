@@ -107,7 +107,7 @@ h6,
 
 .btn {
     color: var(--White);
-    padding: 8px 40px;
+    padding: 8px 35px;
     background: linear-gradient(45deg, var(--Cyan-inside), var(--Blue-inside));
     font-size: 18px;
     border-radius: 50px;
@@ -169,7 +169,12 @@ h6,
 }
 
 .signup-section {
-    padding: 40px 20px;
+    padding: 10px 20px;
+    position: relative;
+}
+
+.signup-section .container {
+    padding: 80px 20px;
     position: relative;
 }
 
@@ -180,8 +185,6 @@ h6,
     padding: 25px 35px;
     position: absolute;
     border-radius: 5px;
-    margin-left: 20px;
-    margin-right: 20px;
 }
 
 .contact-card-flex {
@@ -267,8 +270,6 @@ h6,
     }
     .contact-card {
         padding: 20px 15px;
-        margin-left: 20px;
-        margin-right: 20px;
     }
     .about-grid,    
     .review-grid ,
@@ -315,9 +316,8 @@ h6,
     .container {
         padding: 40px 40px;
     }
-    .contact-card {
-        margin-left: 40px;
-        margin-right: 40px;
+    .signup-section {
+        padding: 10px 40px;
     }
 }
 
